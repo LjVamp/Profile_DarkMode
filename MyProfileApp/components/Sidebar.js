@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
-import { Ionicons } from '@expo/vector-icons'; // Import icons from Expo
+import { Ionicons } from '@expo/vector-icons';
 
 const Sidebar = ({ toggleSidebar }) => {
   return (
@@ -14,7 +14,7 @@ const Sidebar = ({ toggleSidebar }) => {
       <View style={styles.profileContainer}>
         {/* Avatar */}
         <Image
-          source={require('./assets/ME.jpg')}
+          source={require('../assets/ME.jpg')}
           style={styles.avatar}
         />
 
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#4A4947',
     padding: 20,
     zIndex: 1000,
-    justifyContent: 'space-between', // Push footer to the bottom
+    justifyContent: 'space-between',
   },
   closeIcon: {
     position: 'absolute',

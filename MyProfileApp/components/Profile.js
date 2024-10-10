@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, Image, StyleSheet, Switch, TouchableOpacity } from 'react-native';
-import { Ionicons } from '@expo/vector-icons'; // Import icons from Expo
+import { Ionicons } from '@expo/vector-icons';
 
 const Profile = ({ toggleSidebar }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -22,7 +22,7 @@ const Profile = ({ toggleSidebar }) => {
       </View>
 
       {/* Avatar and Profile Details */}
-      <Image source={require('./assets/ME.jpg')} style={styles.avatar} />
+      <Image source={require('../assets/ME.jpg')} style={styles.avatar} />
       <Text style={[styles.name, dynamicStyles.text]}>BANDIOLA, LEDY JOY D.</Text>
       <Text style={[styles.info, dynamicStyles.text]}>3rd Year, USTP CDO</Text>
       <Text style={[styles.info, dynamicStyles.text]}>bandiola.ledyjoy@gmail.com</Text>
